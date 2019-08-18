@@ -1,6 +1,7 @@
 package fr.the3dx900.minebydaylight.game.survivor;
 
 import fr.the3dx900.minebydaylight.game.Character;
+import fr.the3dx900.minebydaylight.game.Generator;
 import fr.the3dx900.minebydaylight.game.Loadout;
 import lombok.Getter;
 import lombok.Setter;
@@ -35,6 +36,13 @@ public abstract class Survivor implements Character {
     }
 
     public void heal(Survivor survivor) {
+    }
+
+    public void workingGenerator(Generator generator) {
+        generator.addWorker(this);
+    }
+
+    public void stopWorkingGenerator() {
     }
 
     public enum State {

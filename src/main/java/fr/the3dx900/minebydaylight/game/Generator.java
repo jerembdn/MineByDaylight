@@ -12,13 +12,12 @@ public class Generator {
 
     @Getter
     @Setter
-    private double activation;
+    private int percentage;
     @Getter
     private Survivor[] workers = new Survivor[4];
 
     public Generator(Location location) {
         this.location = location;
-        activation = 0.0;
     }
 
     public void addWorker(Survivor survivor) {
